@@ -2,17 +2,28 @@
 
 void prime_devisors(int n)
 {
+    int tmp = n;
+    int i = 2;
+    while (tmp != 1)
+    {
+        while (tmp % i == 0)
+        {
+            printf("%d\n", i);
+            tmp /= i;
+        }
+        i++;
+    }
     
 }
 
 int main()
 {
-    int a, b, res;
+    int n;
 
-    if (scanf("%d%d", &a, &b) != 2)
+    if ((scanf("%d", &n) != 1) || (n < 1)) 
         return 1;
-    res = a + b;
 
-    printf("%d\n", res);
+    prime_devisors(n);
+
     return 0;
 }
