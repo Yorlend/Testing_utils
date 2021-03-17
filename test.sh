@@ -35,4 +35,10 @@ do
     fi
 done
 
-gcov main.c
+for src in *.c
+do
+    gcov $src
+done
+
+rm -rf gcov *.gcda *.gcno
+mkdir gcov && mv *.gcov gcov
