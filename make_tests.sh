@@ -5,6 +5,7 @@ read POS
 echo INPUT NUMBER OF NEGATIVE TESTS:
 read NEG
 
+mkdir -p func_tests
 DIR="./func_tests/"
 
 for i in $(seq 1 $POS)
