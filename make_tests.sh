@@ -20,3 +20,4 @@ do
     DIR_OUT=$(printf "./func_tests/neg_%02d_out.txt" $i)
     touch $DIR_IN $DIR_OUT
 done
+touch ./func_tests/readme.md
