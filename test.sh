@@ -10,6 +10,7 @@ do
     IN=$(printf "./func_tests/pos_%02d_in.txt" $i)
     OUT=$(printf "./func_tests/pos_%02d_out.txt" $i)
     ./a.exe < $IN > temp.txt
+    diff temp.txt $OUT >> debug.txt
     if [ $? == 1 ]
     then
         printf "TEST pos_%02d failed\n" $i

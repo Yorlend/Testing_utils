@@ -18,7 +18,7 @@ int main(void)
     else
     {
         result = sum(a, b);
-        printf("%d\n", result);
+        printf("%d\r\n", result);
     }
 
     return exit_code;
