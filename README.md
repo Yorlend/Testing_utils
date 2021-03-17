@@ -1,7 +1,7 @@
 # TESTING UTILS
 
 ### Если в posix-системе внезапно нет утилиты diff:
-**MSYS:** `pacman -S diffutils`
+**MSYS:** `pacman -S diffutils`  
 **WSL: Ubuntu/etc**: `sudo apt install diff`
 
 ## В репозитории находятся скрипты автоматизации создания лаб и тестирования, а также примеры заполнения файлов с функциональными тестами.  
